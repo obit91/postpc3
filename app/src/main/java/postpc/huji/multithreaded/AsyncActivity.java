@@ -31,6 +31,7 @@ public class AsyncActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 myAsyncTask = new MyAsyncTask(asyncText);
+                asyncText.setText("0");
             }
         });
 
@@ -47,6 +48,5 @@ public class AsyncActivity extends AppCompatActivity {
                 myAsyncTask.cancel(true);
             }
         });
-
     }
 }

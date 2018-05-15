@@ -17,6 +17,7 @@ public class MyAsyncTask extends AsyncTask<Void, String, String> {
     private final int SLEEP_TIME = 500;
     private final int MAX_ITERATIONS = 10;
     private final String CANCELLED = "Cancelled";
+    private final String DONE = "Done";
 
     public MyAsyncTask(TextView textView) {
         this.textView = textView;
@@ -31,9 +32,10 @@ public class MyAsyncTask extends AsyncTask<Void, String, String> {
                 Thread.sleep(SLEEP_TIME);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                return CANCELLED;
             }
         }
-        return "Done";
+        return DONE;
     }
 
     @Override
