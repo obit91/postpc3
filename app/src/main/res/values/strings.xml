@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">multiThreaded</string>
+    <string name="title_activity_async">AsyncActivity</string>
+    <string name="title_activity_threads">ThreadsActivity</string>
+</resources>
