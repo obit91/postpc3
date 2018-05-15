@@ -10,32 +10,38 @@
         android:id="@+id/threads_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
         android:text="Create"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintBottom_toTopOf="@+id/threads_start"
+        app:layout_constraintStart_toStartOf="@+id/threads_start" />
 
     <Button
         android:id="@+id/threads_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
         android:text="Start"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="323dp" />
+        app:layout_constraintBottom_toTopOf="@+id/threads_cancel"
+        app:layout_constraintStart_toStartOf="@+id/threads_cancel" />
 
     <Button
         android:id="@+id/threads_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
         android:text="Cancel"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="414dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/threads_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:layout_marginBottom="61dp"
+        android:layout_marginStart="15dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/threads_create"
+        app:layout_constraintStart_toStartOf="@+id/threads_create" />
 
 </android.support.constraint.ConstraintLayout>

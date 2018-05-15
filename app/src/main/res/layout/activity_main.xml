@@ -7,6 +7,7 @@
     tools:context="postpc.huji.multithreaded.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,19 +17,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/threads_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Threads Activity"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/async_button" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/async_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="3dp"
         android:text="AsyncTask Activity"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="138dp" />
+        app:layout_constraintBottom_toTopOf="@+id/threads_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
